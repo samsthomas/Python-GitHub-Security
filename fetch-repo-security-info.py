@@ -8,6 +8,8 @@ repo_name = 'Branch-Test-Repo'
 
 url = f"{api_url}users/{username}/repos/{repo_name}"
 
+print(url)
+
 repo_data = requests.get(url)
 print(repo_data.json())
 
